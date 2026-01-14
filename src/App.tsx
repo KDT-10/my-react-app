@@ -2,14 +2,23 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router';
 
 import './App.css';
-import { Home } from './pages/Home';
-import { ProductDetail } from './pages/ProductDetail';
-import { Cart } from './pages/Cart';
-import { Order } from './pages/Order';
-import { NotFound } from './pages/NotFound';
-import { ConcertsHome } from './pages/concerts/ConcertsHome';
-import { City } from './pages/concerts/City';
-import { Trending } from './pages/concerts/Trending';
+// import Home from './pages/Home';
+// import ProductDetail from './pages/ProductDetail';
+// import Cart from './pages/Cart';
+// import Order from './pages/Order';
+// import NotFound from './pages/NotFound';
+// import ConcertsHome from './pages/concerts/ConcertsHome';
+// import City from './pages/concerts/City';
+// import Trending from './pages/concerts/Trending';
+
+const Home = React.lazy(() => import('./pages/Home'));
+const ProductDetail = React.lazy(() => import('./pages/ProductDetail'));
+const Cart = React.lazy(() => import('./pages/Cart'));
+const Order = React.lazy(() => import('./pages/Order'));
+const NotFound = React.lazy(() => import('./pages/NotFound'));
+const ConcertsHome = React.lazy(() => import('./pages/concerts/ConcertsHome'));
+const City = React.lazy(() => import('./pages/concerts/City'));
+const Trending = React.lazy(() => import('./pages/concerts/Trending'));
 
 function App() {
   return (

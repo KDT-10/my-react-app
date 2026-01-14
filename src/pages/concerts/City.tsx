@@ -4,7 +4,7 @@ import { Content } from '../../components/Content';
 import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header';
 
-export function City() {
+export default function City() {
   const params = useParams();
   return (
     <div>
