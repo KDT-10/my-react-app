@@ -43,9 +43,10 @@ export default function UseCallback() {
       <div>{age}</div>
       <h1>UseCallback Page</h1>
       <button onClick={() => setCount(count + 1)}>Count Up</button>
+      <button onClick={() => setAge(age + 1)}>Age Up</button>
       <p>Count: {count}</p>
       <button onClick={abc}>일반 함수 호출</button>
-      <button onClick={memoizedAbc}>useCallback 함수 호출</button>
+      <button onClick={memoized1}>useCallback 함수 호출</button>
       <button onClick={memoizedAge}>useCallback(memoizedAge) 함수 호출</button>
     </div>
   );
