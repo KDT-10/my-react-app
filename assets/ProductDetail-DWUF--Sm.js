@@ -1,1 +1,0 @@
-import{a,j as s}from"./index-CYQixYF8.js";import{H as e,C as o,F as i}from"./Header-GEwRaFaq.js";function n(){const[r]=a(),t=r.get("id");return s.jsxs("div",{children:[s.jsx(e,{}),s.jsxs(o,{children:["Product Detail Page",s.jsxs("p",{children:["Product ID: ",t]})]}),s.jsx(i,{})]})}export{n as default};

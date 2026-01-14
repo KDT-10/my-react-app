@@ -1,1 +1,0 @@
-import{u as s,j as t}from"./index-CYQixYF8.js";import{H as e,C as n,F as a}from"./Header-GEwRaFaq.js";function u(){const o=s();return t.jsxs("div",{children:[t.jsx(e,{}),t.jsxs(n,{children:["404 Not Found Page",t.jsx("button",{onClick:()=>o("/"),children:"홈으로 이동 "})]}),t.jsx(a,{})]})}export{u as default};

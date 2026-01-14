@@ -1,1 +1,0 @@
-import{j as r}from"./index-CYQixYF8.js";import{H as e,C as s,F as t}from"./Header-GEwRaFaq.js";function n(){return r.jsxs("div",{children:[r.jsx(e,{}),r.jsx(s,{children:"Order Page"}),r.jsx(t,{})]})}export{n as default};
