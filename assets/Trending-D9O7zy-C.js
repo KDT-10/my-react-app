@@ -1,0 +1,1 @@
+import{j as r}from"./index-CYQixYF8.js";import{C as e}from"./ConcertNav-DRu-ZfPs.js";import{H as s,C as n,F as o}from"./Header-GEwRaFaq.js";function x(){return r.jsxs("div",{children:[r.jsx(s,{}),r.jsx(e,{}),r.jsx(n,{children:"Trending Page"}),r.jsx(o,{})]})}export{x as default};
