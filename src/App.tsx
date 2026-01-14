@@ -22,6 +22,7 @@ const Trending = React.lazy(() => import('./pages/concerts/Trending'));
 //
 const UseCallback = React.lazy(() => import('./pages/UseCallback'));
 const UseMemoExample = React.lazy(() => import('./pages/UseMemoExample'));
+const Condition = React.lazy(() => import('./pages/Condition'));
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           </Route>
           <Route path="usecallback" element={<UseCallback />} />
           <Route path="useMemoExample" element={<UseMemoExample />} />
+          <Route path="condition" element={<Condition />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>

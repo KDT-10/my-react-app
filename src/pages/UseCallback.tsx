@@ -10,33 +10,33 @@ export default function UseCallback() {
   };
 
   // 리렌더링 되어도 기존 함수를 재사용
-  const memoizedAbc = React.useCallback(() => {
-    console.log('memoizedAbc count', count);
-  }, [count]);
+  // const memoizedAbc = React.useCallback(() => {
+  //   console.log('memoizedAbc count', count);
+  // }, [count]);
 
   const memoizedAge = React.useCallback(() => {
     console.log('memoizedAge age', age);
   }, [age]);
 
-  const memoized = React.useCallback(() => {
-    console.log('memoized count', count);
-    console.log('memoized age', age);
-  }, [count, age]);
+  // const memoized = React.useCallback(() => {
+  //   console.log('memoized count', count);
+  //   console.log('memoized age', age);
+  // }, [count, age]);
 
   const memoized1 = React.useCallback(() => {
     console.log('memoized1 count', count);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const memoizedFunc = React.useCallback(() => {
-    console.log('memoizedFunc count', count);
-  }, [count]);
+  // const memoizedFunc = React.useCallback(() => {
+  //   console.log('memoizedFunc count', count);
+  // }, [count]);
 
-  const memoizedFunc1 = React.useCallback(() => {
-    console.log('memoizedFunc1 count', age);
-    const count = memoizedFunc();
-    return count;
-  }, [age, memoizedFunc]);
+  // const memoizedFunc1 = React.useCallback(() => {
+  //   console.log('memoizedFunc1 count', age);
+  //   const count = memoizedFunc();
+  //   return count;
+  // }, [age, memoizedFunc]);
 
   return (
     <div>
