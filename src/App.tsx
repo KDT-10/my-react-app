@@ -28,6 +28,7 @@ const Condition = React.lazy(() => import('@/pages/Condition'));
 const UseEffectExample = React.lazy(() => import('@/pages/UseEffectExample'));
 const UserListPage = React.lazy(() => import('@/pages/UserListPage'));
 const ContextPage = React.lazy(() => import('@/pages/ContextPage'));
+const ThemeAppPage = React.lazy(() => import('@/pages/ThemeAppPage'));
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
           <Route path="useEffectExample" element={<UseEffectExample />} />
           <Route path="user-list" element={<UserListPage />} />
           <Route path="context-page" element={<ContextPage />} />
+          <Route path="theme-app" element={<ThemeAppPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
