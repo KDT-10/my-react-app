@@ -36,6 +36,15 @@ export default function UseHookFlowPage() {
     };
   }, [count]);
 
+  const initRef = React.useRef(true);
+  React.useEffect(() => {
+    if (initRef.current) {
+      initRef.current = false;
+      return;
+    }
+    console.log('5. ========= useEffect Change Count', count);
+  }, [count]);
+
   console.log('1. ========= Rendering');
   return (
     <div>
