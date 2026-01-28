@@ -1,12 +1,14 @@
 // import React from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
 import { Content } from '@/components/Content';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 // import Basic from '@/components/tanstack/Basic';
 
-import Mutation from '@/components/tanstack/Mutation';
+// import Mutation from '@/components/tanstack/Mutation';
+import QueryKey from '@/components/tanstack/QueryKey';
 
 // import BasicAxios from '@/components/tanstack/BasicAxios';
 
@@ -29,10 +31,12 @@ export default function TanstackQueryPage() {
           TanstackQuery Page
           {/* <Basic /> */}
           {/* <BasicAxios /> */}
-          <Mutation />
+          {/* <Mutation /> */}
+          <QueryKey />
         </Content>
         <Footer />
       </div>
+      <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   );
 }
